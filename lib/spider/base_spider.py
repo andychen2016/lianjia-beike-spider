@@ -12,8 +12,8 @@ import lib.utility.version
 thread_pool_size = 50
 LIANJIA_SPIDER = "lianjia"
 BEIKE_SPIDER = "ke"
-# SPIDER_NAME = LIANJIA_SPIDER
-SPIDER_NAME = BEIKE_SPIDER
+SPIDER_NAME = LIANJIA_SPIDER
+#SPIDER_NAME = BEIKE_SPIDER
 
 
 class BaseSpider(object):
@@ -49,6 +49,8 @@ class BaseSpider(object):
                 city_info.append("\n")
             else:
                 city_info.append(", ")
+        city_info.append("\n")
+        
         return 'Which city do you want to crawl?\n' + ''.join(city_info)
 
     def get_chinese_city(self, en):

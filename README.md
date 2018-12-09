@@ -4,8 +4,8 @@
 - 数据含义：城市-city, 区县-district, 板块-area, 小区-xiaoqu, 二手房-ershou, 租房-zufang， 新房-loupan。
 - 每个版块存储为一个csv文件，该文件可以作为原始数据进行进一步的处理和分析。
 - 支持图表展示。
-![alt text](https://github.com/jumper2014/lianjia-spider/blob/master/pic/xiaoqu_top.png)
-![alt text](https://github.com/jumper2014/lianjia-spider/blob/master/pic/district_top.png)
+![alt text](https://github.com/andychen2016/lianjia-spider/blob/master/pic/xiaoqu_top.png)
+![alt text](https://github.com/andychen2016/lianjia-spider/blob/master/pic/district_top.png)
 - 如果链家和贝壳页面结构有调整，欢迎反馈，我将尽力保持更新。
 - 此代码仅供学习与交流，请勿用于商业用途。问题反馈QQ群号635276285。
 
@@ -86,34 +86,3 @@ Total cost 299.7534770965576 second to crawl 32735 data items.
 Total crawl 400 loupan.
 Total cost 29.757128953933716 second
 ```
-
-
-
-### 更新记录
-- 2018/11/05 增加工具下载二手房缩略图tool/download_ershou_image.py
-- 2018/11/01 增加二手房缩略图地址
-- 2018/10/28 xiaoqu_to_db.py改造成支持命令行参数自动运行。
-- 2018/10/25 将主要爬取代码抽取到spider类中。
-- 2018/10/22 文件名，目录，代码重构。
-- 2018/10/20 增加中间文件清理功能，能够爬取贝壳网的小区，新房，二手房和租房数据。
-- 2018/10/19 支持贝壳网小区数据爬取
-- 2018/10/15 增加Spider类，优化异常处理，功能无变动
-- 2018/10/14 允许用户通过命令行指定要爬取的城市，而不仅仅通过交互模式选择，用于支持自动爬取。
-- 2018/10/11 增加初步log功能。
-- 2018/10/09 图表展示区县均价排名。
-- 2018/10/07 小区房价导出到json文件, csv文件。图表展示最贵的小区。
-- 2018/10/05 增加Referer。增加透明代理服务器获取(未使用)
-- 2018/06/01 支持User-Agent
-- 2018/04/07 支持采集新房的基本房价信息
-- 2018/04/07 支持采集出租房的相关信息
-- 2018/04/05 支持采集挂牌二手房信息
-- 2018/04/02 支持将采集到的csv数据导入Excel
-- 2018/04/01 同时支持Python2和Python3
-- 2018/04/01 支持将采集到的csv数据导入MongoDB数据库
-- 2018/03/31 支持将采集到的csv数据导入MySQL数据库
-- 2018/03/27 修复bug: 版块下只有一页小区数据时未能正确爬取 
-- 2018/03/27 增加5个城市，现在支持21个城市的小区数据爬取
-- 2018/03/10 自动获取城市的区县列表，现在支持16个城市小区数据爬取
-- 2018/03/06 支持北京二手房小区数据采集
-- 2018/02/21 应对链家前端页面更新，使用内置urllib2代替第三方requests库,提升性能，减少依赖
-- 2018/02/01 支持上海二手房小区数据采集

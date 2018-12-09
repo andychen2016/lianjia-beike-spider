@@ -54,6 +54,7 @@ def create_prompt_text():
             city_info.append("\n")
         else:
             city_info.append(", ")
+    city_info.append("\n")
     return 'Which city do you want to crawl?\n' + ''.join(city_info)
 
 
