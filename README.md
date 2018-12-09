@@ -4,8 +4,8 @@
 - 数据含义：城市-city, 区县-district, 板块-area, 小区-xiaoqu, 二手房-ershou, 租房-zufang， 新房-loupan。
 - 每个版块存储为一个csv文件，该文件可以作为原始数据进行进一步的处理和分析。
 - 支持图表展示。
-![alt text](https://github.com/andychen2016/lianjia-spider/pic/xiaoqu_top.png)
-![alt text](https://github.com/andychen2016/lianjia-spider/pic/district_top.png)
+![alt text](https://github.com/andychen2016/lianjia-spider/tree/master/pic/xiaoqu_top.png)
+![alt text](https://github.com/andychen2016/lianjia-spider/tree/master/pic/district_top.png)
 - 如果链家和贝壳页面结构有调整，欢迎反馈，我将尽力保持更新。
 - 此代码仅供学习与交流，请勿用于商业用途。问题反馈QQ群号635276285。
 
